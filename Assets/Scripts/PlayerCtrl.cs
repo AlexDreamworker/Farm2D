@@ -11,6 +11,7 @@ public class PlayerCtrl : MonoBehaviour
     private Vector2 moveVelocity;
 
     public GameObject bombPrefab;
+    private Vector2 bombPoint;
 
     Rigidbody2D rb;
 
@@ -43,6 +44,15 @@ public class PlayerCtrl : MonoBehaviour
 
     public void BombSpawner()
     {
-        Instantiate(bombPrefab, gameObject.transform.position, Quaternion.identity);
+        Instantiate(bombPrefab, bombPoint, Quaternion.identity);
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Point"))
+        {
+            bombPoint = collision.transform.position;
+        }
     }
 }
