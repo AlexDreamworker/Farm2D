@@ -5,6 +5,7 @@ using UnityEngine;
 public class Blast : MonoBehaviour
 {
     public float countdown;
+
     Enemy enemy;
 
     private void Update()

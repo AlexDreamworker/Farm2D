@@ -6,8 +6,9 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timer;
     public TMP_Text timerTextInfo;
+
+    public float timer;  
 
     private DateTime timerEnd;
 

@@ -5,15 +5,16 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public bool isEnemyDeactivated;
-    //public float deathTimer;
-    public float enemyCurrentHealth = 100f, enemyMaxHealth = 100f;
     public Image healthImage;
 
+    public float enemyCurrentHealth = 100f, enemyMaxHealth = 100f;
+
+    [HideInInspector] public bool isEnemyDeactivated;
+    
+    Coroutine enemyStoped;
     CircleCollider2D collider;
     FollowPath followPath;
-
-    private Coroutine enemyStoped;
+ 
 
     private void Start()
     {

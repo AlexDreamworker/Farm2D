@@ -93,8 +93,8 @@ GameObject:
   - component: {fileID: 3770864607284133194}
   - component: {fileID: 3770864607284133173}
   - component: {fileID: 3770864607284133195}
-  - component: {fileID: 3770864607284133193}
   - component: {fileID: 3770864607284133192}
+  - component: {fileID: 3770864607284133193}
   - component: {fileID: 3770864607284133198}
   m_Layer: 9
   m_Name: Ufo
@@ -156,6 +156,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &3770864607284133192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3770864607284133172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70db7359da0881245a8f33e6c05dbc2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthImage: {fileID: 3712212008126718946}
+  enemyCurrentHealth: 100
+  enemyMaxHealth: 100
+  isEnemyDeactivated: 0
 --- !u!114 &3770864607284133193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,22 +188,6 @@ MonoBehaviour:
   MyPath: {fileID: 0}
   speed: 1.5
   maxDistance: 0.1
---- !u!114 &3770864607284133192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3770864607284133172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70db7359da0881245a8f33e6c05dbc2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnemyDeactivated: 0
-  enemyCurrentHealth: 100
-  enemyMaxHealth: 100
-  healthImage: {fileID: 3712212008126718946}
 --- !u!111 &3770864607284133198
 Animation:
   m_ObjectHideFlags: 0
