@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    public float countdown = 3f;
+    public float countdown;
+    public GameObject blastPrefab;
 
     private void Update()
     {
@@ -10,6 +11,7 @@ public class Bomb : MonoBehaviour
 
         if (countdown <= 0f)
         {
+            Instantiate(blastPrefab, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
